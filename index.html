@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alvida Jumma Mubarak · romantic</title>
+  <!-- Google Fonts & Font Awesome (icons) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- floating background elements: stars, moon, hearts -->
+  <div class="floating-bg" id="floatingBg"></div>
+
+  <!-- main container (pages) -->
+  <div class="page-container">
+    <!-- PAGE 1 - Alvida Jumma Mubarak -->
+    <div class="page active-page" id="page1">
+      <h1>Alvida Jumma Mubarak <i class="fas fa-heart" style="color:#e56b8f;"></i></h1>
+      <div class="romantic-msg">
+        <i class="fas fa-star"></i> <i class="fas fa-moon"></i> <i class="fas fa-heart"></i><br>
+        My dearest love, as the blessed Jumma bids farewell,<br>
+        I pray Allah wraps you in mercy and fills your heart with serenity.<br>
+        You are the coolness of my eyes, my dua under the moonlight.<br>
+        Alvida Jumma Mubarak, my angel <span style="font-size:1.6rem;">🌙✨🕌💫</span>
+      </div>
+      <!-- Next button -->
+      <button class="nav-btn" id="next1">Next <i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <!-- PAGE 2 - Photo gallery -->
+    <div class="page" id="page2">
+      <h2>For my beautiful girl <i class="fas fa-images"></i></h2>
+      <div class="gallery">
+        <!-- Replace these URLs with your own photos -->
+        <img  class="gallery-item" src="image1.png" >
+        <img  class="gallery-item" src="image3aaf.png" >
+        <img  class="gallery-item" src="imageaaf5.png" >
+        <img  class="gallery-item" src="imagesameer.png" >
+      </div>
+      <button class="nav-btn" id="next2">Next <i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <!-- PAGE 3 - video + audio + final message -->
+    <div class="page" id="page3">
+      <h2>Blessings & love <i class="fas fa-video"></i></h2>
+      <!-- Short video embed - REPLACE THIS LINK WITH YOUR VIDEO -->
+      <div class="video-wrapper">
+        <iframe src="https://youtube.com/shorts/0r5MIzKIM-Q?si=mVspbGDyeWQzAIiE" title="short romantic video" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- audio player with play/pause & voice message style -->
+      <div class="audio-player">
+        <i class="fas fa-heart" style="font-size:2rem;"></i>
+        <audio id="bgAudio" loop>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+        <button class="audio-btn" id="playPauseBtn"><i class="fas fa-play"></i> Play</button>
+        <button class="audio-btn" id="voiceMsgBtn"><i class="fas fa-phone-alt"></i> voice note</button>
+      </div>
+      <!-- final glowing message -->
+      <div class="glow-text">“May Allah bless you with happiness, my love 💖”</div>
+      <!-- heart button & hidden popup -->
+      <button class="heart-btn" id="surpriseHeart"><i class="fas fa-heart"></i> ❤️</button>
+      <div id="popupSurprise" class="popup-message">
+        <i class="fas fa-star"></i> You are my dua 💕 <i class="fas fa-star"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to external JavaScript -->
+  <script src="script.js"></script>
+  <noscript>JavaScript not enabled</noscript>
+</body>
+</html>
